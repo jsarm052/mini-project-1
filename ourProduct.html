@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Burger Ninja</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- FAV ICON -->
+        <link rel="icon" href="asset/image/BurgerNinjaIcon.png" type="image/x-icon">
+    
+        <!-- FONTS AWESOME CDN -->
+        <script src="https://kit.fontawesome.com/0e205b39a4.js" crossorigin="anonymous"></script>
+
+        <!-- SWIPER JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <!-- EXTERNAL CSS -->
+        <link rel="stylesheet" href="asset/style.css">
+      </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="asset/image/BurgerNinjaIcon.png" alt="BurgerNinja" width="40" height="35"><span class="text-light">Burger Ninja</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="ourProduct.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="careerpage.html">Career</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" data-bs-theme="dark">
+                  <li><a class="dropdown-item text-light" href="ourstory.html">Our Story</a></li>
+                  <li><a class="dropdown-item text-light" href="communities.html">Communities</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-light" href="storelocation.html">Store Location</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- END OF NAVBAR -->
+      <div>
+        <img src="asset/image/menu/menubanner.jpg" style="width:100%">
+      </div>
+      <br>
+      <br>
+      <div>
+        <h2 class="text-center">OUR FOOD</h2>
+      </div>
+      <br>
+      <!-- CAROUSEL -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <a href="#burgers"><img src="asset/image/menu/slideone.jpg">
+              <p class="text-center">BURGERS</p></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <a href="#fries"><img src="asset/image/menu/slidestwo.jpg">
+              <p class="text-center">FRIES</p></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <a href="#pizza"><img src="asset/image/menu/menuslidespizza.jpg">
+              <p class="text-center">PIZZA</p></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <a href="#valuemeal"><img src="asset/image/menu/slidesfour.jpg">
+              <p class="text-center">VALUE MEAL</p></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <a href="#burritos"><img src="asset/image/menu/slidesfive.jpg">
+              <p class="text-center">BURRITOS</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- END OF CAROUSEL -->
+      <br>
+      <br>
+      <!-- MENU -->
+      <section class="container-menu"  id="burgers">
+        
+        <!-- BURGER -->
+        <div class="menutitle">
+          <h3 class="text-center">BURGERS</h3>
+        </div>
+      <div class="container-selection container-fluid">
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburgerone.jpg"class="card-img-top img-fuid" alt="The BBQ Master">
+            <div class="card-body">
+              <p class="card-text">The BBQ Master</p>
+              <p><small>a burger smothered in tangy BBQ sauce, caramelized onions, and crispy bacon</small></p>
+            </div>
+            <div>
+                <!-- Button trigger modal -->
+              <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                  Grab a Bite
+              </button>
+
+                <!-- Modal -->
+                <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">The BBQ Master</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <img src="asset/image/menu/menuburgerone.png" style="height:300px; width:300px;">
+                        <div>
+                          <h3 class="text-center">The BBQ Master</h3>
+                          <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                            <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                              <label for="radio">Add Drinks:</label>
+                              <div style="padding: 0px 0px 5px 10px;">
+                                <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                                <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                                
+                                <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                                <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                                
+                                <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                                <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                              </div>
+                            </div>
+                            <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                        <a href="checkoutform.html"><button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburgertwo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Greek Goddess</p>
+              <p><small>a flavorful burger topped with feta cheese, tzatziki sauce, and roasted red peppers</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">The BBQ Master</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgerone.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center">The BBQ Master</h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburgerthree.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Classic Chicken</p>
+              <p><small>a simple and traditional chicken burger with lettuce, tomato, and mayonnaise</small></p>
+            </div>
+          <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </section>
+        <!-- END OF BURGER -->
+      <br>
+      <br>
+      <!-- FRIES -->
+        <div class="menutitle" id="fries">
+          <h3 class="text-center">FRIES</h3>
+        </div>
+        <div class="container-selection">
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menufriesone.jpg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Golden Delights</p>
+              <p><small> simple and classic, emphasizing the crispy texture</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menufriestwo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Truffle Fries</p>
+              <p><small>topped with truffle oil and parmesan cheese for a decadent treat</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menufriesthree.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Classic Chicken</p>
+              <p><small>a simple and traditional chicken burger with lettuce, tomato, and mayonnaise</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- END OF FRIES -->
+        <br>
+        <br>
+        <!-- PIZZA -->
+        <div class="menutitle" id="pizza">
+          <h3 class="text-center">PIZZA</h3>
+        </div>
+        <div class="container-selection">
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menupizzaone.jpg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Mediterranean Magic</p>
+              <p><small>A light pizza with feta cheese, olives, roasted red peppers, and artichoke hearts.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menupizzatwo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Garlic and Herb Infusion:</p>
+              <p><small>A flavorful pizza with garlic, rosemary, thyme, and parmesan cheese.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menupizzathree.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Meat Lovers' Paradise</p>
+              <p><small>A hearty pizza topped with pepperoni, sausage, bacon, and ground beef.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- END OF PIZZA -->
+      <br>
+      <br>
+        <!-- VALUE -->
+        <div class="menutitle" id="valuemeal">
+          <h3 class="text-center">VALUE MEAL</h3>
+        </div>
+        <div class="container-selection">
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuvalueone.jpg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Hungry Man's Delight</p>
+              <p><small>This value meal includes a double burger with bacon and cheese, large fries, and a drink, perfect for satisfying a big appetite.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuvaluetwo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Veggie Lover's Combo</p>
+              <p><small>For those who prefer a plant-based diet, this meal includes a veggie burger, side salad, and a small drink.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuvaluethree.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">The Cheesy Fiesta Box</p>
+              <p><small>This value meal includes a quesadilla, nachos, and a small drink, perfect for cheese lovers.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- END OF VALUE MEAL -->
+        <br>
+        <br>
+        <!-- BURRITOS -->
+        <div class="menutitle" id="burritos">
+          <h3 class="text-center">BURRITO</h3>
+        </div>
+        <div class="container-selection">
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburritoone.jpg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Hawaiian Luau</p>
+              <p><small>A tropical burrito with teriyaki chicken, pineapple, rice, and a sweet chili sauce.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburritotwo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Baja Beach</p>
+              <p><small>A seafood burrito with grilled shrimp, cilantro-lime rice, black beans, and avocado.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="asset/image/menu/menuburittothree.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Southwest Sunrise</p>
+              <p><small>A breakfast burrito with scrambled eggs, sausage, peppers, and cheddar cheese.</small></p>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgb(214, 65, 6);">
+                Grab a Bite
+            </button>
+
+              <!-- Modal -->
+              <div class="modal fade checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="asset/image/menu/menuburgertwo.png" style="height:300px; width:300px;">
+                      <div>
+                        <h3 class="text-center"></h3>
+                        <div style="display:flex; align-items: flex-start; flex: wrap; flex-direction: column; padding-left: 55px;">
+                          <div class="container-drinks" style="display:flex; flex-direction: row; justify-content: center; align-items: center; ;">
+                            <label for="radio">Add Drinks:</label>
+                            <div style="padding: 0px 0px 5px 10px;">
+                              <input type="radio" alt="select" id="coke" value="Coke" name="drinks" >
+                              <img src="asset/image/menu/coke.png" style="width:40px;height:80px">
+                              
+                              <input type="radio" alt="select" id="sprite" value="Sprite" name="drinks">
+                              <img src="asset/image/menu/sprite.png" style="width:45px;height:80px">
+                              
+                              <input type="radio" alt="select" id="pepsi" value="Zero" name="drinks">
+                              <img src="asset/image/menu/zero.png" style="width:40px;height:80px">
+                            </div>
+                          </div>
+                          <label for="quantity" >Quantity: &nbsp;<input type="number" id="quantity" name="quantity" style="width:40px; height:20px; border-radius: 5px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Add to Cart</button>
+                      <button type="button" class="btn text-light" style="background-color: rgb(214, 65, 6);">Proceed to Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- END OF BURRITOS -->
+      </div>
+<!-- END OF MENU -->
+<br>
+      <footer class="bg-dark" style="border:0px solid black; width: 100%;">
+        <div class="row d-flex justify-content-space-evenly text-center" style="margin: 0">
+            <div class="col-lg-3 col-md-4 row w-20 text-light mt-3 mb-2">
+                <a href="index.html" style="text-decoration: none;"><img src="asset/image/BurgerNinjaIcon.png" alt="Burger Ninja" width="90" height="70" ><span style="color: white;">BURGER NINJA</span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 row w-20 d-flex justify-content-center text-light mt-3 mb-2">
+                <span><b>PROMOTIONS</b></span>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center;" href="#">Promos</a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="#">Gift Cards</a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="#">Franchising</a>
+            </div>
+            <div class="col-lg-3 col-md-4 row w-20 d-flex justify-content-center text-light mt-3 mb-2">
+                <span><b>INFORMATION</b></span>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="contactUs.html">Contact</a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="#">Delivery</a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="ourstory.html">About Us</a>
+            </div>
+            <div class="col-lg-3 col-md-4 row w-20 d-flex justify-content-center text-light mt-3 mb-2">
+                <span><b>Follow Us On</b></span>
+                <div class="footer-icon">
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="https://www.facebook.com/">
+                  <i class="fa-brands fa-square-facebook fa-xl" style="color: #ffffff;"></i>
+                </a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                </a>
+                <a class="fw-light text-light" style="text-decoration: none; text-align: center" href="https://www.twitter.com/">
+                <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

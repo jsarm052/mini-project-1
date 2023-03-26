@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Rubik+Iso&family=Sen&display=swap');
+
+
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(font/Walkway\ SemiBold.ttf);
+} */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Iso', cursive;
+font-family: 'Sen', sans-serif; */
+
+
+.navbar {
+  font-family: 'Sen', sans-serif
+}
+
+body, footer {
+  font-family: 'Sen', sans-serif
+}
+/* INDEX CSS */
+
+
+
+
+/* CONTACT US CSS */
+.contactus-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  
+}
+
+
+
+/* MENU CSS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide a{
+  text-decoration: none;
+  color: black
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-selection {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+}
+.container-selection .card {
+  display:flex;
+  justify-content: center;
+  border:none;
+  text-align: center;
+}
+.container-selection img {
+  margin-bottom: 0;
+}
+
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* COMMUNITY CSS */
+
+
+
+
+.testimonials {
+  padding: 20px 20px;
+}
+
+
+
+.testimonials .cardsTestimonials
+{
+  box-shadow: none;
+}
+
+/* OUR STORY CSS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.container-officials {
+  border:none;
+}
+.leadership-cards {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  
+}
+.leadership-cards div {
+  border:none;
+
+}
+
+
+
+
+/* CAREER CSS */
+
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.containerCards{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.containerCards .firstCard img {
+  box-shadow: -15px 15px 20px rgb(212, 85, 0)
+}
+
+.containerCards .secondCard img {
+  box-shadow: 15px -15px 20px rgb(212, 85, 0)
+}
+
+
+
+
+.container-locations {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-map {
+  width: 490px;
+  height: 325px;
+}
+
+.container-search button {
+  border:none;
+  background-color: rgb(255, 253, 253);
+  padding: 0px;
+}
+
+
+
+@media only screen and (min-width: 200px)and (max-width: 764px) {
+
+  /* INDEX */
+  .container-wellknown div{
+    text-align: center;
+    height: 300px
+  }
+
+  .container-wellknown-two img{
+    width: 190px;
+    height: 210px;
+    position: relative;
+    left: 50px;
+  }
+
+  .container-pics div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 5px;
+  }
+  .pics-container .imgcard {
+    width: 400px;
+    margin-bottom: 5px;
+  }
+
+  .containerCards .second-card  {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  /* CAREER MEDIA */
+  .recruitContainer { 
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .containerCards img  {
+    height: 250px;
+    width: 250px;
+  }
+ 
+  .containerCards div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 10px 5px;
+    text-align: justify;
+    font-size: small;
+  }
+  
+
+  .containerCards .secondCard {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  
+  .containerCards h3  {
+    font-size: large;
+    padding: 5px 10pp;
+    
+  }
+
+ 
+ 
+
+  /* COMMUNITY CSS - MEDIA*/
+
+
+  .communityContent div {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-top: 5px;
+  }
+  .communityContent img {
+    height:250px;
+    
+  }
+  
+  .containerpic {
+    display:flex;
+    justify-content: center;
+    margin-top:5px;
+  }
+  .containerpic img{
+    display:flex;
+    justify-content: center;
+    height: 250px
+
+  }
+  .leadership-cards div{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leadership-cards img{
+    width: 300px;
+    
+  }
+ 
+  /* MENU MEDIA */
+
+  .container-selection {
+    
+    
+    gap: 10px;
+  }
+  .container-selection .card {
+    
+    
+   
+    border:none;
+    text-align: center;
+ 
+    
+  }
+  .container-selection img {
+    margin-bottom: 0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+  }
+
+  /* OUR STORY */
+    .text-container p {
+      font-size: small;
+      text-align: left;
+    }
+
+
+    .leadership-cards img {
+      height: 200px;
+      width: 200px;
+    }
+}
+
+ 
+
+
+
+  
+ 
