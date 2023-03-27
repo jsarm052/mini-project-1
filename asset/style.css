@@ -20,6 +20,9 @@ body, footer {
   font-family: 'Sen', sans-serif
 }
 /* INDEX CSS */
+.homepageimg img{
+  height: 250px;
+}
 
 
 
@@ -32,6 +35,10 @@ body, footer {
   justify-content: center;
   gap: 60px;
   
+}
+.contact-card {
+  position:relative;
+  top: 25px;
 }
 
 
@@ -50,6 +57,7 @@ body, footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .swiper-slide a{
   text-decoration: none;
@@ -91,6 +99,7 @@ body, footer {
 
 
 /* COMMUNITY CSS */
+
 
 
 
@@ -196,6 +205,7 @@ video {
 
 
 
+
 @media only screen and (min-width: 200px)and (max-width: 764px) {
 
   /* INDEX */
@@ -229,16 +239,25 @@ video {
 
   }
 
+  /* CONTACT */
+  .contact-card {
+    position: relative;
+    top: -30px;
+  }
+
+
   /* CAREER MEDIA */
   .recruitContainer { 
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
   }
 
+
   .containerCards img  {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
  
   .containerCards div{
@@ -247,7 +266,7 @@ video {
     justify-content: center;
     align-items: center;
     width: 400px;
-    padding: 10px 5px;
+    padding: 0px 5px 0px 5px;
     text-align: justify;
     font-size: small;
   }
@@ -261,11 +280,18 @@ video {
   
   .containerCards h3  {
     font-size: large;
-    padding: 5px 10pp;
+    padding: 5px 10px;
     
   }
+  .textbanner .textcontainer {
+    font-size: medium !important;
+    text-align: start;
+  }
 
- 
+  video {
+    
+    padding: 20px
+  }
  
 
   /* COMMUNITY CSS - MEDIA*/
@@ -333,7 +359,8 @@ video {
   /* OUR STORY */
     .text-container p {
       font-size: small;
-      text-align: left;
+      text-align: start;
+      
     }
 
 
@@ -369,6 +396,20 @@ video {
       flex-direction: row;
       row-gap: 10px;
     }
+    .container-map {
+      
+      padding: 15px;
+    }
+
+
+    /* CHECKOUT */
+    .checkoutmodal {
+      position: relative;
+      left: 10px;
+
+    }
+
+
 }
 
 
