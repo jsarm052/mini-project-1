@@ -219,7 +219,7 @@ video {
     row-gap: 5px;
   }
   .pics-container .imgcard {
-    width: 400px;
+    width: 300px;
     margin-bottom: 5px;
   }
 
@@ -341,7 +341,37 @@ video {
       height: 200px;
       width: 200px;
     }
+
+      
+    .modal-body {
+      position: relative;
+      left:-45px;
+    }
+    .modalpic {
+      width:200px;
+      height:230px;
+    }
+
+    .drinkscontainer img {
+      position:relative;
+      left: -5px;
+    }
+
+
+    /* STORE MEDIA */
+    .storemodal {
+      display:flex;
+      position:relative;
+      left: 10px;
+    }
+    .container-locations { 
+      display: flex; 
+      flex-direction: row;
+      row-gap: 10px;
+    }
 }
+
+
 
  
 
